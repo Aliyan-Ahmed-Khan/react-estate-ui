@@ -12,7 +12,6 @@
             object-fit: cover;
             border-radius: 10px;
         }
-
     }
 
     .textContainer {
@@ -32,6 +31,7 @@
             font-weight: 60;
             color: #444;
             transition: all 0.4s ease;
+            font-family: 'Times New Roman', Times, serif;
 
             &:hover {
                 color: #000;
@@ -58,7 +58,6 @@
         }
 
         .bottom {
-
             display: flex;
             justify-content: space-between;
             gap: 10px;

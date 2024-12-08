@@ -1,10 +1,9 @@
-import './singlePage.scss'
-import Slider from '../../../components/slider/Slider'
+import './singlePage.scss';
+import Slider from "../../../components/slider/Slider";
 import { singlePostData } from "../../../lib/dummydata";
-import { userData } from '../../../lib/dummydata'
+import { userData } from "../../../lib/dummydata";
 
 function SinglePage() {
-
     return (
         <div className="singlePage">
             <div className="details">
@@ -25,17 +24,19 @@ function SinglePage() {
                                <span>{userData.name}</span>
                             </div>
                         </div>
-                        <div className="bottom"></div>
+                        <div className="bottom">
+                            {singlePostData.description}
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="feaures">
+            <div className="features">
                 <div className="wrapper">
-
+                    
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default SinglePage
+export default SinglePage;
