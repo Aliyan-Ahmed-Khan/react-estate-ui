@@ -7,6 +7,7 @@ import{
 import ListPage from "./routes/homePage/listPage/listPage";
 import Layout from "./routes/homePage/layout/layout";
 import SinglePage from "./routes/homePage/singlePage/singlePage";
+import ProfilePage from "./routes/homePage/profilePage/profilePage";
 
 function App() {
   const router =createBrowserRouter([
@@ -14,17 +15,21 @@ function App() {
       path:"/",
       element:<Layout/>,
       children:[
-        {path:"/",
+        {
+          path:"/",
          element:<HomePage/>
-
         },
-        {path:"/list",
+        {
+          path:"/list",
           element:<ListPage/>
- 
         },
-        {path:"/:id",
+        {
+          path:"/:id",
           element:<SinglePage/>
- 
+        },
+        {
+          path:"/profile",
+          element:<ProfilePage/>
         }
       ]
     }
